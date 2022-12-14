@@ -1,0 +1,129 @@
+# Created at 2022-12-14T11:47:19.417
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-12-14T11:47:19.881
+Unexpected IOException with stream: 2022-12-14T11:47:19.870+05:30  INFO 27924 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+# Created at 2022-12-14T11:47:19.911
+Unexpected IOException with stream: 2022-12-14T11:47:19.907+05:30  INFO 27924 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2022-12-14T11:47:21.102
+Unexpected IOException with stream: 2022-12-14T11:47:21.093+05:30  WARN 27924 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2022-12-14T11:47:22.743
+Unexpected IOException with stream: 2022-12-14T11:47:22.700+05:30  INFO 27924 --- [           main] com.cybage.WineControllerTest            : Started WineControllerTest in 12.245 seconds (process running for 16.075)
+
+
+# Created at 2022-12-14T11:47:22.833
+Unexpected IOException: 5,1,com.cybage.WineControllerTest,addWineTest,null,null,null
+
+
+# Created at 2022-12-14T11:47:23.605
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.075
+Unexpected IOException with stream: Hibernate: update wine set category=?, name=?, price=?, quantity=? where id=?
+
+
+# Created at 2022-12-14T11:47:24.153
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.197
+Unexpected IOException: 6,1,com.cybage.WineControllerTest,addWineTest,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.279
+Unexpected IOException: 5,1,com.cybage.WineControllerTest,getAllWines,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.582
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0
+
+
+# Created at 2022-12-14T11:47:24.792
+Unexpected IOException: 6,1,com.cybage.WineControllerTest,getAllWines,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.797
+Unexpected IOException: 5,1,com.cybage.WineControllerTest,getWineById,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.805
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.821
+Unexpected IOException: 6,1,com.cybage.WineControllerTest,getWineById,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.827
+Unexpected IOException: 5,1,com.cybage.WineControllerTest,updateWine,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.835
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.844
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.850
+Unexpected IOException with stream: Hibernate: update wine set category=?, name=?, price=?, quantity=? where id=?
+
+
+# Created at 2022-12-14T11:47:24.867
+Unexpected IOException with stream: Hibernate: select w1_0.id,w1_0.category,w1_0.name,w1_0.price,w1_0.quantity from wine w1_0 where w1_0.id=?
+
+
+# Created at 2022-12-14T11:47:24.882
+Unexpected IOException: 6,1,com.cybage.WineControllerTest,updateWine,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.887
+Unexpected IOException: 5,1,com.cybage.WineControllerTest,deleteWine,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.896
+Unexpected IOException: 6,1,com.cybage.WineControllerTest,deleteWine,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.902
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.cybage.WineControllerTest,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.907
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.cybage.WineParkApplicationTests,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.922
+Unexpected IOException with stream: 2022-12-14T11:47:24.910+05:30  INFO 27924 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cybage.WineParkApplicationTests]: WineParkApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+
+# Created at 2022-12-14T11:47:24.929
+Unexpected IOException with stream: 2022-12-14T11:47:24.926+05:30  INFO 27924 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cybage.WineParkApplication for test class com.cybage.WineParkApplicationTests
+
+
+# Created at 2022-12-14T11:47:24.954
+Unexpected IOException: 5,1,com.cybage.WineParkApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.970
+Unexpected IOException: 6,1,com.cybage.WineParkApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2022-12-14T11:47:24.974
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.cybage.WineParkApplicationTests,null,null,null
+
+

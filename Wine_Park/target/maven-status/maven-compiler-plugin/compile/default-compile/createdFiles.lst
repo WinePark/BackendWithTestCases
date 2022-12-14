@@ -1,0 +1,6 @@
+com\cybage\WineParkApplication.class
+com\cybage\model\Wine.class
+com\cybage\repository\WineRepository.class
+com\cybage\service\WineService.class
+com\cybage\controller\WineController.class
+com\cybage\service\WineServiceImpl.class

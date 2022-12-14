@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Wine_Park,com.cybage.controller,WineController,46,3,0,0,6,1,5,1,5,1
+Wine_Park,com.cybage.service,WineServiceImpl,50,7,4,0,11,2,6,2,4,2
+Wine_Park,com.cybage.model,Wine,6,32,0,0,2,14,2,9,2,9
+Wine_Park,com.cybage,WineParkApplication,5,3,0,0,2,1,1,1,1,1
