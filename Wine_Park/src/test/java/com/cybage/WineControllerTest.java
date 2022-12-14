@@ -1,7 +1,7 @@
 package com.cybage;
 
 import static org.assertj.core.api.Assertions.assertThat;
-//import static org.junit.Assert.assertEquals;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -10,14 +10,18 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import com.cybage.model.Wine;
 import com.cybage.repository.WineRepository;
+import com.cybage.service.WineService;
+import com.cybage.service.WineServiceImpl;
 
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.mockito.Mockito;
 
 
 
@@ -31,7 +35,6 @@ public class WineControllerTest
       
       @Autowired
       private WineRepository winerepo;
-      
       
 
       @Test
@@ -47,7 +50,22 @@ public class WineControllerTest
             wine.setCategory("White");
             winerepo.save(wine);
             assertNotNull(winerepo.findById(2).get());
+            
+            //Mockito.when(winerepo.save(wine)).thenReturn(wine);
+            //assertThat(wine.getId()==2);
+            //assertThat(wine!=null);
+
       }
+      
+      
+      
+      private void assertEquals(int id, int qty) {
+  		// TODO Auto-generated method stub
+  		
+  	}
+      
+      
+      
       
       @Test
       @Order(2)
@@ -55,15 +73,32 @@ public class WineControllerTest
       {
             List<Wine> list = winerepo.findAll();
             assertThat(list).size().isGreaterThan(0);
+            
+            //Mockito.when(winerepo.findAll()).thenReturn(list);
+            //assertThat(wineService.getAllWine()).isEqualTo(list);
+
       }
+      
+      
+      
+      
+      
+      
+      
       
       @Test
       @Order(3)
       public void getWineById()
       {
             Wine w = winerepo.findById(2).get();
-            assertEquals(1000,w.getQuantity());
+            assertEquals(2, w.getQuantity());
       }
+      
+      
+      
+      
+      
+      
       
       @Test
       @Order(4)
@@ -75,12 +110,21 @@ public class WineControllerTest
             assertNotEquals(2000.00,winerepo.findById(2).get().getPrice());
       }
       
+      
+      
+      
+      
+      
+      
+      
+  	
+      
       @Test
       @Order(5)
       public void deleteWine()
       {
-            //repo.deleteById(14L);
-            //assertThat(repo.existsById(14L)).isFalse();
+            //winerepo.deleteById(2);;
+            //assertThat(winerepo.existsById(2)).isFalse();
       }
       
 
